@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="login_form">
+        <!-- Formulario de registro -->
+        <form action="php/registro.php" method="POST">
+
+            <div class="login_logo">
+                <img src="img/2bdf77ea3de4e0cbba3de49d1f10790e.jpg" alt="Logo">
+            </div>
+            
+            <!-- Nombre -->
+            <div class="input_box">
+                <label for="nombre">Nombre de usuario</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce tu usuario" required />
+            </div>
+            <!-- Correo -->
+            <div class="input_box">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="email" placeholder="Introduce tu correo electrónico" required />
+            </div>
+            <!-- Contraseña -->
+            <div class="input_box">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required />
+            </div>
+            <!-- Edad -->
+            <div class="input_box">
+                <label for="edad">Edad</label>
+                <input type="number" min="10" max="110" id="password" name="edad" placeholder="Introduce tu contraseña" required />
+            </div>
+            <!-- Botón -->
+            <button type="submit">Registrarse</button>
+            <p class="sign_up">¿Ya tienes cuenta? <a href="login.html">Inicia Sesión</a></p>
+        </form>
+    </div>
+</body>
+</html>
