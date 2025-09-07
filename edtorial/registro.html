@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
     <title>Registro</title>
 </head>
+
 <body>
     <div class="login_form">
         <!-- Formulario de registro -->
         <form action="php/registro.php" method="POST">
 
             <div class="login_logo">
-                <img src="img/2bdf77ea3de4e0cbba3de49d1f10790e.jpg" alt="Logo">
+                <img src="img/logo editorial.png" alt="Logo">
             </div>
-            
+
             <!-- Nombre -->
             <div class="input_box">
                 <label for="nombre">Nombre de usuario</label>
@@ -33,7 +35,17 @@
             <!-- Edad -->
             <div class="input_box">
                 <label for="edad">Edad</label>
-                <input type="number" min="10" max="110" id="password" name="edad" placeholder="Introduce tu contraseña" required />
+                <input type="number" min="10" max="110" id="password" name="edad" placeholder="Introduce tu edad"
+                    required />
+            </div>
+            <!-- Tipo de empleado -->
+            <div class="input_box">
+                <label for="tipo_empleado">Tipo de empleado</label>
+                <select id="tipo_empleado" name="tipo_empleado" required>
+                    <option value="invitado" selected>Invitado</option>
+                    <option value="editor">Editor</option>
+                    <option value="admin">Administrador</option>
+                </select>
             </div>
             <!-- Botón -->
             <button type="submit">Registrarse</button>
@@ -41,4 +53,5 @@
         </form>
     </div>
 </body>
+
 </html>

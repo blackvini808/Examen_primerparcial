@@ -13,7 +13,7 @@ body {
     padding: 0 10px;
     display: flex;
     background-color: #000000;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 14px ), repeating-linear-gradient( #ebebeb55, #fdb2b2 );
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff91 14px ), repeating-linear-gradient( rgb(125, 203, 255), #000000 );
     justify-content: center;
     align-items: center;
 }
@@ -153,4 +153,27 @@ form button:hover {
 .login_logo img {
     width: 150px;
     border-radius: 10px; /* opcional: esquinas redondeadas */
+}
+
+/* --- NUEVO: estilos para select (tipo de empleado) --- */
+form .input_box select {
+    width: 100%;
+    height: 57px;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    outline: none;
+    background: #F8F8FB;
+    font-size: 17px;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+    transition: 0.2s ease;
+    color: #3f4a5a;
+    appearance: none; /* quitar estilo por defecto del navegador */
+    cursor: pointer;
+}
+
+/* Para cuando el select esté enfocado */
+form .input_box select:focus {
+    border-color: #596981;
+    background: #fff;
 }

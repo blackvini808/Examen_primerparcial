@@ -1,0 +1,262 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Resetting default styling and setting font-family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-y: auto;
+}
+
+header {
+  width: 100%;
+  background-color: #fff; /* Fondo blanco */
+  border-bottom: 1px solid #eaeaea; /* Línea sutil abajo */
+}
+
+nav {
+  max-width: 1200px;  /* Para que no se pegue a los bordes */
+  margin: 0 auto;     /* Centrado horizontal */
+  padding: 1rem 2rem; /* Espaciado interior */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px; /* Ajusta según tu logo */
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Espaciado entre links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111; /* Negro suave */
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0077cc; /* Azul de hover */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el logo con el texto */
+  gap: 0.5rem; /* Espacio entre el logo y el texto */
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 50px; /* Ajusta el tamaño del logo */
+  width: auto;
+}
+
+.logo span {
+  margin-left: 0.3rem; /* Empuja el span ligeramente hacia la derecha */
+  font-weight: normal; /* Menos peso que "VIDA DE TINTA" */
+  color: #555; /* Un gris más suave */
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+  overflow: hidden;
+
+  /* Fondo con foto + degradado encima */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.356)), 
+    url("img/pauline-loroy-tv8PIPPY3rQ-unsplash.jpg") no-repeat center center/cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.books {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.books h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem; /* Espacio entre tarjetas */
+}
+
+.book-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100%;
+  height: 300px; /* fijo para que todos tengan mismo tamaño */
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.book-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.book-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.btn-small {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.btn-small:hover {
+  background: #005fa3;
+}
+
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 3rem 2rem 1rem;
+    font-family: "PT Sans", sans-serif;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: #0077cc;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1 1 250px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Dropdown de usuario en el nav */
+.user-menu {
+    position: relative;
+}
+
+.user-menu .dropdown {
+    display: none; /* oculto por defecto */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0.5rem 0;
+    min-width: 150px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.user-menu .dropdown li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #111;
+    text-decoration: none;
+}
+
+.user-menu .dropdown li a:hover {
+    background: #f0f0f0;
+}
+
+/* Mostrar dropdown solo al hacer hover sobre el usuario */
+.user-menu:hover .dropdown {
+    display: block;
+    cursor: pointer;
+}
